@@ -7,10 +7,7 @@ pipeline {
             sh './output'
         }
         stage("build") {
-            sh make
+            sh 'make'
         } 
-        stage("execute"){
-            sh ./output
-        }
     }
 }
